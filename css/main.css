@@ -1,0 +1,80 @@
+@charset 'utf-8';
+
+.inner{width: 1165px; margin: 0 auto; position: relative;}
+
+body{background-color: #28004d;}
+/*header*/
+header{position: fixed; width: 100%; height: 90px; z-index: 99;}
+header::before{content: ''; display: block; background-color: #28004d; width: 100%; height: 90px; position: absolute; opacity: 0.6;}
+header .inner .logo a{width: 104px; height: 90px; background: url(../img/logo.gif) no-repeat center left; font-size: 0; color: transparent; float: left;}
+header .inner ul{float: right;}
+header .inner li{float: left;}
+header .inner ul li a{display: block; width: 120px; height: 90px; text-align: center; line-height: 90px; transition: all 0.5s;}
+header .inner ul li:hover a{background-color: #fff; color: #10001e;}
+
+/*contents*/
+#contents{padding-top: 90px;}
+
+.visual{background: url(../img/visual_bg.jpg) no-repeat center; width: 100%; height: 570px; padding-top: 90px; box-sizing: border-box; margin-bottom: 80px;}
+.visual .p1{font-size: 15px; font-weight: 700; margin-bottom: 35px;}
+.visual h2{font-size: 50px; font-weight: 600; margin-bottom: 50px;}
+.visual .p2{font-size: 20px; margin-bottom: 35px;}
+.visual a{display: block; width: 300px; height: 50px; border-radius: 20px; background-color: #28004d; text-align: center; line-height: 50px; letter-spacing: 5px; transition: all 0.5s;}
+.visual a:hover{background: #fff; color: #10001e;}
+
+.search{margin: 0 auto; width: 800px; height: 100px; border: #fff solid 3px; border-radius: 50px; box-sizing: border-box; padding: 0 55px; position: relative; margin-bottom: 80px;}
+.search input::placeholder{color: transparent; transition: all 0.5s;}
+.search:hover input::placeholder{color: #fff;}
+.search label{display: none;}
+.search input{width: 80%; height: 45px; position: absolute; top: 50%; transform: translateY(-50%); font-size: 20px; border: 0; outline: none; background-color: transparent; color: #fff;}
+.search button{font-size: 0; color: transparent; display: block; width: 35px; height: 36px; background: url(../img/search.gif) no-repeat center; position: absolute; right: 40px; top: 50%; transform: translateY(-50%); cursor: pointer;}
+
+.business{margin-bottom: 100px;}
+.business h2{font-size: 50px; text-align: center; margin-bottom: 80px;}
+.business .inner > div{width: 1000px; height: 200px; border: 3px solid #fff; border-radius: 100px; margin: 0 auto; text-align: center; padding-top: 20px; box-sizing: border-box; margin-bottom: 50px; transition: all 0.5s; position: relative;}
+.business .inner > div strong{font-size: 20px; margin-bottom: 10px; font-weight: 700}
+.business .inner > div h3{font-size: 35px; margin-bottom: 25px; font-weight: 700;}
+.business .inner > div .date{display: block; font-size: 15px; margin-bottom: 20px;}
+.business .inner > div a{display: block; font-size: 13px; width: 120px; height: 25px; border: 1px solid #fff; line-height: 25px; margin: 0 auto; transition: all 0.5s;}
+.business .site01::before{content: ''; display: block; width: 1000px; height: 200px; position: absolute; top: -2px; left: -1px; z-index: -1; background: url(../img/Menu_01.png) no-repeat center; opacity: 0; transition: all 0.5s;}
+.business .site02::before{content: ''; display: block; width: 1000px; height: 200px; position: absolute; top: -2px; left: -1px; z-index: -1; background: url(../img/Menu_02.png) no-repeat center; opacity: 0; transition: all 0.5s;}
+.business .site03::before{content: ''; display: block; width: 1000px; height: 200px; position: absolute; top: -2px; left: -1px; z-index: -1; background: url(../img/Menu_03.png) no-repeat center; opacity: 0; transition: all 0.5s;}
+.business .site04::before{content: ''; display: block; width: 1000px; height: 200px; position: absolute; top: -2px; left: -1px; z-index: -1; background: url(../img/Menu_04.png) no-repeat center; opacity: 0; transition: all 0.5s;}
+.business .inner > div:hover{color: #10001e;}
+.business .inner > div:hover a{color: #10001e; border-color: #10001e;}
+.business .inner > div:hover::before{opacity: 1;}
+.business .more_view{display: block; width: 80px; height: 80px; background: url(../img/more_view.png) no-repeat center; margin: 0 auto; font-size: 0; color: transparent;}
+
+.line{width: 100%; height: 3px; background-color: #fff; margin-bottom: 50px;}
+
+.information .border{width: 500px; height: 250px; position: relative;}
+.information .border > h3{font-size: 25px; font-weight: 700; margin-bottom: 15px;}
+.information .border > p{font-size: 14px; font-weight: 400; position: absolute; top: 5px; right: 0;}
+.information .border ul{border-top: 3px solid #fff;}
+.information .border li{height: 50px; border-bottom: 1px solid #fff; line-height: 50px; position: relative;}
+.information .border li:hover strong{text-decoration: underline;}
+.information .border li strong{font-weight: 400;}
+.information .border li span{font-size: 12px; position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+.information .notice{float: left;}
+.information .news{float: right;}
+.information{margin-bottom: 80px;}
+
+.request{height: 500px; background-color: #fff; box-sizing: border-box; position: relative;}
+.request .bg_img{width: 45%; height: 100%; background: url(../img/bg_img.jpg) no-repeat; position: absolute; transition: all 1s; background-size: 120%; z-index: 3;}
+.request .bg_img::after{content: ''; display: block; width: 100%; height: 100%; background-color: #000; opacity: 0.5; position: absolute; transition: all 1s;}
+.request .bg_img:hover{background-size: 100%;}
+.request .bg_img:hover::after{opacity: 0;}
+.request .inner{text-align: right;}
+.request p{font-size: 20px; color: #a15cde; margin-bottom: 20px; padding-top: 70px;}
+.request h2{font-size: 40px; color: #10001e; margin-bottom: 80px;}
+.request a{font-size: 22px; display: block; width: 356px; height: 70px; background-color: #a15cde; border: 3px solid #a15cde; border-radius: 20px; position: absolute; text-align: center; line-height: 70px; transition: all 0.5s;}
+.request .button_01{top: 230px; right: 0;}
+.request .button_02{top: 340px; right: 0;}
+.request a:hover{background-color: transparent; color: #a15cde;}
+
+footer{height: 140px; background-color: #cbcbcb;}
+footer .f_logo a{display: block; width: 104px; height: 140px; font-size: 0; color: transparent; background: url(../img/f_logo.gif) no-repeat center left; float: left;}
+footer .f_txt{display: block; color: #818181; font-weight: 400; padding-top: 30px; padding-left: 184px; box-sizing: border-box;}
+footer .f_txt p{margin-bottom: 13px; font-size: 14px;}
+
+.top_button{width: 100px; height: 100px; background-color: #a15cde; border-radius: 50%; background-image: url(../img/go_top.gif); background-repeat: no-repeat; background-position: center; position: fixed; right: 20px; bottom: 20px; transform: scale(60%);}
